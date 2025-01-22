@@ -28,11 +28,10 @@ body {
     padding: 40px;
 }
 
-
-
 .logo-section {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-items {
