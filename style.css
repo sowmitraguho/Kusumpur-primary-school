@@ -42,7 +42,9 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.hamburger-icon{
+    display: none;
+}
 .banner-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -52,7 +54,9 @@ body {
     margin-bottom: 20px;
     padding: 40px;
 }
-
+.banner-left h2{
+    font-size: 3.5rem;
+}
 .banner-left p {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -246,7 +250,10 @@ footer{
     border: 1px solid orange;
     border-radius: 10px;
     color: white;
-    font-weight: 500;
+    font-family: "Quicksand", serif;
+    font-style: normal;
+    font-weight: 600;
+    border: 0.5px solid black;
 }
 
 .secondary-btn {
@@ -260,3 +267,91 @@ footer{
     border-radius: 10px;
     font-weight: 600;
 }
+
+
+/* Resposive CSS */
+@media only screen and (max-width: 600px) {
+    .nav-title, 
+    .nav-menu,
+    .nav-btn{
+        display: none;
+    }
+    .hamburger-icon{
+        display: block;
+        
+        width: 100%;
+        
+
+    }
+    .fa-bars{
+        font-size: 3rem;
+        float: right;
+    }
+    .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+    }
+    .banner-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        font-family: "Quicksand", serif;
+        margin: 1rem;
+        text-align: center;
+    }
+    .banner-section img{
+        width: 100%;
+    }
+    .banner-left h2{
+        font-size: 2.5rem;
+    }
+    .curriculum-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.2rem;
+    }
+    .arrow-symbol{
+        display: none;
+    }
+    .story-section {
+        padding: 1rem;
+    }
+    .story-cards{
+        display: block;
+    }
+    .other-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .highlighted-card{
+        display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-left{
+        width: 100%;
+        color: white;
+        margin-bottom: 2rem;
+    }
+    .logo-title{
+        color: #fff;
+    }
+    .footer-links{
+        margin-bottom: 1rem;
+    }
+    .footer-right{
+        display: block;
+    }
+  }
+
+
+
