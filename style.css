@@ -156,7 +156,10 @@ body {
 }
 
 .story-section {
-    background: linear-gradient(to top, rgba(255, 225, 56, 0.5), rgba(255, 225, 56, 0));
+    background: linear-gradient(to top, rgba(255, 225, 56, 0.5), rgba(255, 225, 56, 0)), url('assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 40px;
 }
 
