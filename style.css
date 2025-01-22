@@ -17,7 +17,9 @@ body {
 .list-style-none {
     list-style-type: none;
 }
-
+.marquee-section{
+    padding: 2rem;
+}
 .navbar {
     display: grid;
     grid-template-columns: 20% 60% 20%;
@@ -278,22 +280,19 @@ footer{
     }
     .hamburger-icon{
         display: block;
-        
+        margin-right: 0;
         width: 100%;
-        
-
     }
     .fa-bars{
         font-size: 3rem;
         float: right;
     }
     .navbar {
-        width: 100%;
-        display: grid;
-        grid-template-columns: (2, 1fr);
+        width: 90%;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px;
+        padding: 1rem;
     }
     .banner-section {
         display: flex;
@@ -301,11 +300,13 @@ footer{
         justify-content: center;
         align-items: center;
         font-family: "Quicksand", serif;
-        margin: 1rem;
+        margin: 0;
+        padding: 1rem;
         text-align: center;
     }
     .banner-section img{
         width: 100%;
+        margin-bottom: 1rem;
     }
     .banner-left h2{
         font-size: 2.5rem;
